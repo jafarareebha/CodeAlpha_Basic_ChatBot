@@ -1,5 +1,5 @@
 def Chatbot():
-    UserInput = input("You:")
+    UserInput = input("You:").lower()
     while UserInput!="bye":
         if UserInput=="hello" or UserInput=="hi":
             print("Hi")
@@ -10,6 +10,6 @@ def Chatbot():
             exit()
         else:
             print("Sorry, I don't understand.")
-        UserInput = input("You:")
+        UserInput = input("You:").lower()
     print("Goodbye!")
 Chatbot()
